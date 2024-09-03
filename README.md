@@ -27,67 +27,73 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 1. **Clonez** ce dépôt sur votre machine locale :
    ```bash
    git clone https://github.com/votre-utilisateur/CarFleet-Management.git
-Importez le projet Spring Boot dans votre IDE préféré (Eclipse, IntelliJ, etc.).
+2. **Importez** le projet Spring Boot dans votre IDE préféré (Eclipse, IntelliJ, etc.).
+3. **Configurez** les informations de la base de données dans le fichier `application.properties`.
+4. **Compilez** et **exécutez** l'application backend avec Maven :
 
-Configurez les informations de la base de données dans le fichier application.properties.
+   ```bash
+   mvn clean install
+   ```
 
-Compilez et exécutez l'application backend avec Maven :
+   ```bash
+   mvn spring-boot:run
+   ```
 
-bash
-Copier le code
-mvn clean install
-mvn spring-boot:run
-Frontend
-Accédez au répertoire frontend :
+### Frontend
 
-bash
-Copier le code
-cd frontend
-Installez les dépendances nécessaires :
+2. **Accédez** au répertoire frontend :
+   ```bash
+   cd frontend
+    ```
+3.  **Installez** les dépendances nécessaires :
+   ```bash
+   npm install
+   ```
+4.  **Lancez** l'application frontend :
+   ```bash
+   npm start
+   ```
 
-bash
-Copier le code
-npm install
-Lancez l'application frontend :
+### Application Android
 
-bash
-Copier le code
-npm start
-Application Android
-Ouvrez le répertoire android-app dans Android Studio.
+1. **Ouvrez** le répertoire `android-app` dans Android Studio.
+2. **Compilez** et **installez** l'application sur un appareil Android (ou un émulateur) qui sera installé dans les véhicules :
+- Pour compiler, cliquez sur "Build" dans Android Studio.
+- Pour installer sur un appareil, connectez-le et cliquez sur "Run".
+3. **Lancez** l'application Android sur le dispositif. Elle commencera à envoyer les données de localisation en temps réel au backend.
 
-Compilez et installez l'application sur un appareil Android (ou un émulateur) qui sera installé dans les véhicules :
+## Utilisation
 
-Pour compiler, cliquez sur "Build" dans Android Studio.
-Pour installer sur un appareil, connectez-le et cliquez sur "Run".
-Lancez l'application Android sur le dispositif. Elle commencera à envoyer les données de localisation en temps réel au backend.
+1. **Lancez** le backend et le frontend.
+2. **Ouvrez** l'interface utilisateur dans votre navigateur Web en accédant à [http://localhost:3000](http://localhost:3000).
+3. **Connectez-vous** pour accéder aux fonctionnalités de gestion des voitures, de suivi des emplacements, et de gestion des utilisateurs.
+4. **Installez** et **lancez** l'application Android sur les véhicules pour commencer le suivi en temps réel.
 
-Utilisation
-Lancez le backend et le frontend.
+## Contribuer
 
-Ouvrez l'interface utilisateur dans votre navigateur Web en accédant à http://localhost:3000.
-
-Connectez-vous pour accéder aux fonctionnalités de gestion des voitures, de suivi des emplacements, et de gestion des utilisateurs.
-
-Installez et lancez l'application Android sur les véhicules pour commencer le suivi en temps réel.
-
-Contribuer
 Les contributions sont les bienvenues ! Pour contribuer à CarFleet-Management, veuillez suivre les étapes suivantes :
 
-Fork ce dépôt.
-Créez une branche pour votre fonctionnalité :
-bash
-Copier le code
-git checkout -b feature/NouvelleFonctionnalité
-Committez vos changements :
-bash
-Copier le code
-git commit -am 'Ajouter une nouvelle fonctionnalité'
-Push votre branche sur le dépôt distant :
-bash
-Copier le code
-git push origin feature/NouvelleFonctionnalité
-Créez une nouvelle Pull Request.
-Auteurs
-Mohamed Hakkou
-Yahya Zini
+1. **Fork** ce dépôt.
+2. **Créez** une branche pour votre fonctionnalité :
+   ```bash
+   git checkout -b feature/NouvelleFonctionnalité
+   ```
+   
+3. **Committez** vos changements :
+
+   ```bash
+   git commit -am 'Ajouter une nouvelle fonctionnalité'
+   ```
+   
+4. **Push** votre branche sur le dépôt distant :
+
+   ```bash
+   git push origin feature/NouvelleFonctionnalité
+   ```
+5. **Créez** une nouvelle Pull Request.
+
+## Auteurs
+
+- Mohamed Hakkou
+- Yahya Zini
+
